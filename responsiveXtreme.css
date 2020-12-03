@@ -1,0 +1,37 @@
+/* max 900px (tablets)*/
+@media only screen
+and (max-width: 900px){
+	body{
+		max-width: 900px;
+	}
+	main{
+		background-color: lightgray;
+	}
+	nav ul li a{
+		font-size: 1.2rem;
+	}
+	#logo{
+		margin-top: 35px;
+		padding-top: 10%;
+		background-size: 50% 50%;
+	}
+}
+@media only screen
+and (max-width: 600px){
+	
+	body{
+		max-width: 600px;
+	}
+	main{
+		background-color: lightgray;
+	}
+@media only screen
+and(max-width: 480px){
+	
+	body{
+		max-width: 480px;
+	}
+	main{
+		background-color: lightgray;;
+	}
+}

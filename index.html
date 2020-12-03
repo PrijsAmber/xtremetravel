@@ -1,0 +1,95 @@
+<!-- XtreemTravel -->
+<!DOCTYPE html>
+<html lang = "nl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="responsiveXtreme.css">
+        <meta name = "robots" content= "all">
+        <meta name = "language" content= "Dutch">
+        <meta name= "author" content = "Amber">
+        <meta name= "description" content="XtreemTravel, booking">
+        <meta name= "keywords" content="XtreemTravel, Booking, Site">
+        <meta name="copyright" content="copyright">
+        <title>XtreemTravel</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+				<li><a href="index.html">Welkomstpagina</a></li>
+				<li><a href="windsurfing.html">Windsurfing</a></li>
+				<li><a href="mountainclimbing.html">Mountainclimbing</a></li>
+				<li><a href="snorkelen.html">Snorkelen</a></li>
+			</ul>
+        </nav>
+        <div id="logo">
+        </div>
+        <main>
+				<p>Welkom bij <i>XtreemTravel</i>, de online booking site voor de extreemste
+				vakanties.<br> Boek je vakantie nu voor de voordeligste bestemmingen.<br> Ons specialisme: de actiefste
+				vakanties voor windsurfers, snorkelaar en mountainclimber op alle continenten. </p>
+        </main>
+		<div class="tabs">
+			<div class="tab" id="tab1" 
+			onclick="document.getElementById('card1').style.display='block';
+				document.getElementById('card2').style.display='none';
+				document.getElementById('card3').style.display='none';">
+			Tab 1: Windsurfing
+			</div>
+			<div class="tab" id="tab2" 
+			onclick="document.getElementById('card1').style.display='none';
+				document.getElementById('card2').style.display='block';
+				document.getElementById('card3').style.display='none';">
+			Tab 2: Mountainclimbing
+			</div>
+			<div class="tab" id="tab3" 
+			onclick="document.getElementById('card1').style.display='none';
+				document.getElementById('card2').style.display='none';
+				document.getElementById('card3').style.display='block';">
+			Tab 3: Snorkelen
+			</div>
+		</div>
+		<div class= "cards" id="card1" style="display: none;">
+			<div class="content-left">
+				<div class="x-icon" onclick=
+				"document.getElementById('card1').style.display='none';">
+				x</div>
+			</div>
+			<div class="content-right"> 
+				<img src="Images/windsurfen.jpg" alt="Windsurfing">
+				<h2>Windsurfing in Cancún México</h2>
+				<p>Deze maand is het aantrekkelijkst voor windsurfing in Cancún, México.<br>
+				   Lees hier verder: <a href="windsurfing.html">Windsurfing</a><br></p>
+				</div>
+		</div>
+		<div class= "cards" id="card2" style="display: none;">
+			<div class="content-left">
+				<div class="x-icon" onclick=
+				"document.getElementById('card2').style.display='none';">
+				x</div>
+			</div>
+			<div class="content-right">
+				<img src="Images/mountainclimbing.jpg" alt="Mountainclimbing">
+				<h2>Mountainclimbing in de Himalayas</h2><p>
+				Deze week vertrekt een groep enthousiaste klimmers naar de Himalayas<br>
+				Lees hier verder: <a href="mountainclimbing.html">Mountainclimbing</a><br></p>
+				</div>
+		</div>
+		<div class= "cards" id="card3" style="display: none;">  
+			<div class="content-left">
+				<div class="x-icon" onclick=
+				"document.getElementById('card3').style.display='none';">
+				x</div>
+			</div>
+			<div class="content-right">
+				<img src="Images/snorkelen.jpg" alt="snorkelen">
+				<h2>Snorkelen in Costa Rica</h2><p> Naast de natuurreservaten heeft Costa Rica 's wereld tweede grootste koraalrif<br>
+				Lees hier verder: <a href="snorkelen.html">Snorkelen</a><br></p>
+				</div>
+		</div>
+        <footer>
+			<p>Copyright &copy; 2018<i> Ontworpen door: Amber</i>
+			Alle rechten voorbehouden</p>
+		</footer>
+    </body>
+</html>
